@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.zadanie3.MainController">
+
+    <!-- GÓRA -->
+    <top>
+        <HBox spacing="10" style="-fx-padding: 10;">
+            <Button text="Dodaj pociąg" onAction="#handleAdd"/>
+            <Button text="Usuń" onAction="#handleDelete"/>
+            <Button text="Modyfikuj" onAction="#handleModify"/>
+            <Button text="Sortuj" onAction="#handleSort"/>
+            <TextField fx:id="searchField" promptText="Nr pociągu lub przewoźnik..."/>
+        </HBox>
+    </top>
+
+    <!-- LEWA STRONA -->
+    <left>
+        <ListView fx:id="platformList" prefWidth="180.0"/>
+    </left>
+
+    <!-- ŚRODEK -->
+    <center>
+        <TableView fx:id="trainTable">
+
+            <columns>
+                <TableColumn fx:id="numberCol" text="Nr pociągu" prefWidth="120.0"/>
+                <TableColumn fx:id="carrierCol" text="Przewoźnik" prefWidth="150.0"/>
+                <TableColumn fx:id="directionCol" text="Kierunek" prefWidth="150.0"/>
+                <TableColumn fx:id="platformCol" text="Peron" prefWidth="70.0"/>
+                <TableColumn fx:id="timeCol" text="Godzina" prefWidth="100.0"/>
+                <TableColumn fx:id="statusCol" text="Status" prefWidth="120.0"/>
+            </columns>
+
+        </TableView>
+    </center>
+
+</BorderPane>
