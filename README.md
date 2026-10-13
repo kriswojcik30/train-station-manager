@@ -2,7 +2,8 @@
 
 Desktop application for managing a train station timetable: trains, platforms and tracks, with live status updates and station announcements. Built as a university project at AGH University of Krakow (Computational Engineering), with a focus on JavaFX and the MVC pattern.
 
-<!-- Add a screenshot here: drag an image into the GitHub editor -->
+<img width="893" height="623" alt="Main window – timetable with status colours" src="https://github.com/user-attachments/assets/4d94de05-ed1e-4d32-89ea-9b1a51fdd454" />
+
 
 ## Features
 
@@ -11,6 +12,9 @@ Desktop application for managing a train station timetable: trains, platforms an
 - Selecting a platform shows only the trains assigned to it
 - Editing platform, track and status directly in the table
 - Add-train dialog with validation; the "Add" button stays disabled until the data is correct
+
+  <img width="231" height="192" alt="Adding new train - first variable - name" src="https://github.com/user-attachments/assets/c606ba57-2854-4ba0-97b0-4bf3bb726bda" />
+
 
 **Business rules**
 - Unique train numbers across the station
